@@ -1,0 +1,9 @@
+惯量：I1=105.8, I2=434.9, I3=537.4
+时间范围：[0.0, 150.0]
+初值 omega0=(0.01, 10.0, 0.01)
+
+===== 守恒量误差统计 =====
+Method                         max rel. E error   max rel. |L| error
+Implicit midpoint                  4.349842e-15         2.091272e-15
+Gauss-Legendre 4                   1.405333e-14         7.110323e-15
+Adaptive GL4 + projection          1.505714e-15         8.365086e-16
