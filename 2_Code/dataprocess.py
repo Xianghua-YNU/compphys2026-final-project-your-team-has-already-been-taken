@@ -9,6 +9,8 @@ from scipy.integrate import solve_ivp
 
 DEFAULT_DATA_PATH = Path(r"data_smallest_1.csv")
 SCRIPT_DIR = Path(__file__).resolve().parent
+FIG_DIR = SCRIPT_DIR / "fig"
+FIG_DIR.mkdir(exist_ok=True)
 I1 = 105.8
 I2 = 434.9
 I3 = 537.4
@@ -124,7 +126,7 @@ def style_axes(ax: plt.Axes) -> None:
 #         ax.axvline(landing_t, color="r", linestyle="--")
 #         style_axes(ax)
 #
-#     output_path = output_path.resolve()
+#     output_path: Path = FIG_DIR / "smallest_axis.png",
 #     fig.savefig(output_path, dpi=1200)
 #     if show:
 #         plt.show()
