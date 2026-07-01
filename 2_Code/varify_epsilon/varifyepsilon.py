@@ -66,7 +66,7 @@ class SimulationConfig:
     # 时间区间
     # =====================================================
     t0: float = 0.0
-    t1: float = 30.0
+    t1: float = 150.0
 
     # =====================================================
     # 欧拉角初值（单位：rad）
@@ -780,35 +780,35 @@ def run_all_methods(
     # )
     # results[sol.name] = sol
 
-    # # =====================================================
-    # # 5. Gauss-Legendre 四阶
-    # # =====================================================
-    # sol = solve_fixed_step_method(
-    #     name="Gauss-Legendre 4",
-    #     stepper=lambda t, y, h: gauss_legendre4_step(
-    #         t,
-    #         y,
-    #         h,
-    #         p=p,
-    #         nonlinear_tol=cfg.nonlinear_tol,
-    #     ),
-    #     t_span=t_span,
-    #     y0=y0,
-    #     dt=cfg.dt_fixed,
-    # )
-    # results[sol.name] = sol
-    #
-    # # =====================================================
-    # # 6. Adaptive GL4
-    # # =====================================================
-    # sol = solve_adaptive_gl4(
-    #     t_span=t_span,
-    #     y0=y0,
-    #     cfg=cfg,
-    #     p=p,
-    # )
-    #
-    # results[sol.name] = sol
+    # =====================================================
+    # 5. Gauss-Legendre 四阶
+    # =====================================================
+    sol = solve_fixed_step_method(
+        name="Gauss-Legendre 4",
+        stepper=lambda t, y, h: gauss_legendre4_step(
+            t,
+            y,
+            h,
+            p=p,
+            nonlinear_tol=cfg.nonlinear_tol,
+        ),
+        t_span=t_span,
+        y0=y0,
+        dt=cfg.dt_fixed,
+    )
+    results[sol.name] = sol
+
+    # =====================================================
+    # 6. Adaptive GL4
+    # =====================================================
+    sol = solve_adaptive_gl4(
+        t_span=t_span,
+        y0=y0,
+        cfg=cfg,
+        p=p,
+    )
+
+    results[sol.name] = sol
 
     return results
 
@@ -890,7 +890,7 @@ def plot_euler_angles(
     fig, axes = plt.subplots(
         3,
         1,
-        figsize=(11, 9),
+        figsize=(10, 5),
         sharex=True,
         constrained_layout=True,
     )

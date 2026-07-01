@@ -14,6 +14,9 @@ from scipy.optimize import root
 # 1. 显眼参数区：只改这里即可快速切换实验
 # ============================================================
 
+figsize1 = (8,5)
+figsize2 = (15,10)
+
 @dataclass(frozen=True)
 class RigidBodyParams:
     """刚体主转动惯量。这里使用题目给出的网球拍定理参数。"""
@@ -703,7 +706,7 @@ def plot_angular_velocity(
     fig, axes = plt.subplots(
         3,
         1,
-        figsize=(11, 9),
+        figsize=figsize1,
         sharex=True,
         constrained_layout=True,
     )
@@ -775,7 +778,7 @@ def plot_invariants(
     fig, axes = plt.subplots(
         2,
         1,
-        figsize=(11, 7.5),
+        figsize=figsize2,
         sharex=True,
         constrained_layout=True,
     )

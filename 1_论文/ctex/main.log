@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.6.17)  30 JUN 2026 16:45
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.6.17)  1 JUL 2026 21:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1768,11 +1768,7 @@ Package: suffix 2006/07/15 1.5a Variant command support
 ))) (set/shuoming.tex)
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 23.
- (main.aux
-
-LaTeX Warning: Label `fig:euler4' multiply defined.
-
-)
+ (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -2108,12 +2104,12 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 69.
 See the caption package documentation for explanation.
 
+[2]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 75.
 See the caption package documentation for explanation.
 
-[2]
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "KaiTi/BI" (it probably doesn't
@@ -2141,58 +2137,52 @@ Package fontspec Info:
 (fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
 
 
-
 LaTeX Font Warning: Font shape `TU/KaiTi(0)/m/it' undefined
 (Font)              using `TU/KaiTi(0)/m/n' instead on input line 107.
 
+[3]
 File: ./fig/minimal_axis.png Graphic file (type bmp)
 <./fig/minimal_axis.png>
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 147.
 See the caption package documentation for explanation.
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 3 might be wrong on input line 147.
-
-
-[3]
 File: ./fig/intermediate_axis.png Graphic file (type bmp)
 <./fig/intermediate_axis.png>
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 169.
 See the caption package documentation for explanation.
 
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 4 might be wrong on input line 175.
+
+
+[4]
 File: ./fig/E_AM_intersection.png Graphic file (type bmp)
 <./fig/E_AM_intersection.png>
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 181.
 See the caption package documentation for explanation.
 
-[4]
 File: ./fig/phase_portrait.png Graphic file (type bmp)
 <./fig/phase_portrait.png>
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 220.
-See the caption package documentation for explanation.
-
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10.53937> no
 t available
 (Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on inpu
-t line 225.
+t line 230.
 [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 []
  []
 
 
-Overfull \hbox (92.95036pt too wide) detected at line 285
+Overfull \hbox (92.95036pt too wide) detected at line 290
 []
  []
 
@@ -2200,40 +2190,45 @@ File: ./fig/epsilon_0.png Graphic file (type bmp)
 <./fig/epsilon_0.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 292.
+(caption)                particular \caption on input line 297.
 See the caption package documentation for explanation.
 
 File: ./fig/epsilon.png Graphic file (type bmp)
 <./fig/epsilon.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 298.
+(caption)                particular \caption on input line 303.
 See the caption package documentation for explanation.
 
 
-Package hyperref Warning: No autoref name for `thm' on input line 304.
+Overfull \hbox (10.91069pt too wide) in paragraph at lines 302--303
+ [] 
+ []
+
+[7]
+
+Package hyperref Warning: No autoref name for `thm' on input line 309.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 309.
+(caption)                particular \caption on input line 314.
 See the caption package documentation for explanation.
 
-[7]
 File: ./fig/minimal_axis.png Graphic file (type bmp)
 <./fig/minimal_axis.png>
 
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 330.
+(caption)                particular \caption on input line 335.
 See the caption package documentation for explanation.
 
 File: ./fig/energy_momentum.png Graphic file (type bmp)
 <./fig/energy_momentum.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 335.
+(caption)                particular \caption on input line 340.
 See the caption package documentation for explanation.
 
+[8]
 File: ./fig/E_euler.png Graphic file (type bmp)
 <./fig/E_euler.png>
 File: ./fig/dE_euler.png Graphic file (type bmp)
@@ -2241,99 +2236,77 @@ File: ./fig/dE_euler.png Graphic file (type bmp)
 File: ./fig/phase_euler.png Graphic file (type bmp)
 <./fig/phase_euler.png>
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 351.
-See the caption package documentation for explanation.
-
-[8]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 357.
+(caption)                particular \caption on input line 356.
 See the caption package documentation for explanation.
 
-
-Overfull \hbox (7.16266pt too wide) in paragraph at lines 359--380
- [] 
- []
-
-File: ./fig/compare.png Graphic file (type bmp)
-<./fig/compare.png>
 File: ./fig/compare_E.png Graphic file (type bmp)
 <./fig/compare_E.png>
+[9]
+File: ./fig/compare.png Graphic file (type bmp)
+<./fig/compare.png>
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 387.
 See the caption package documentation for explanation.
 
-[9]
 File: ./fig/final3.png Graphic file (type bmp)
 <./fig/final3.png>
-File: ./fig/final3_E.png Graphic file (type bmp)
-<./fig/final3_E.png>
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 399.
+(caption)                particular \caption on input line 398.
 See the caption package documentation for explanation.
 
 File: ./fig/final3_enhanced.png Graphic file (type bmp)
 <./fig/final3_enhanced.png>
-File: ./fig/final3_enhanced_E.png Graphic file (type bmp)
-<./fig/final3_enhanced_E.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 405.
+(caption)                particular \caption on input line 403.
 See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 413.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (7.16266pt too wide) in paragraph at lines 415--434
- [] 
- []
 
 [10]
+File: ./fig/euler2_E.png Graphic file (type bmp)
+<./fig/euler2_E.png>
 File: ./fig/euler_all.png Graphic file (type bmp)
 <./fig/euler_all.png>
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 459.
+(caption)                particular \caption on input line 463.
 See the caption package documentation for explanation.
 
 File: ./fig/euler_all_E.png Graphic file (type bmp)
 <./fig/euler_all_E.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 464.
+(caption)                particular \caption on input line 468.
 See the caption package documentation for explanation.
 
-File: ./fig/euler_4_E.png Graphic file (type bmp)
-<./fig/euler_4_E.png>
+File: ./fig/euler_longtime.png Graphic file (type bmp)
+<./fig/euler_longtime.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 469.
+(caption)                particular \caption on input line 473.
 See the caption package documentation for explanation.
 
-File: ./fig/euler_4_E.png Graphic file (type bmp)
-<./fig/euler_4_E.png>
+File: ./fig/euler_enhance.png Graphic file (type bmp)
+<./fig/euler_enhance.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 474.
+(caption)                particular \caption on input line 478.
 See the caption package documentation for explanation.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 11 might be wrong on input line 483
+(multicol)                Footnotes on page 11 might be wrong on input line 478
 .
 
-[11]
+[11] [12]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 486.
+(caption)                particular \caption on input line 490.
 See the caption package documentation for explanation.
 
 (main.bbl
@@ -2342,11 +2315,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--41
 ][] [] [][][][][][][][][][][][][][][][][]$[]\TU/TimesNewRoman(0)/m/n/9.03374 .
  []
 
-) [12]
+) [13]
 
 Package natbib Warning: There were undefined citations.
 
-[13] (main.aux)
+[14] (main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2022/08/05>
@@ -2359,19 +2332,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F20295A656E78871A3189F17E74DFBFC;1199.
+(rerunfilecheck)             Checksum: D51044D69711E6895D71BFB53AAB90E0;1299.
  ) 
 Here is how much of TeX's memory you used:
- 39460 strings out of 402628
- 880316 string characters out of 5442425
- 1334883 words of memory out of 5000000
- 67876 multiletter control sequences out of 15000+600000
+ 39441 strings out of 402628
+ 878857 string characters out of 5442425
+ 1335576 words of memory out of 5000000
+ 67857 multiletter control sequences out of 15000+600000
  656728 words of font info for 209 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 107i,14n,125p,11136b,1355s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,14n,125p,11136b,1395s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (13 pages).
+Output written on main.pdf (14 pages).

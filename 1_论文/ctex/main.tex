@@ -61,11 +61,11 @@
 		\subsection{欧拉角约定}
 		我们先作一个核心约定，那就是欧拉角的约定，为了方便与参考文献对比，以及公式形式和理论使用的统一性，我们将随从文章\cite{2017_VanDamme,Landau_2013_BOOK}的约定，按照\autoref{fig:ueler-angle} \autoref{fig:axes}的形式使用欧拉角：
 		\begin{center}
-			\includegraphics[scale=.6]{./fig/euler-angle.png}
+8.			\includegraphics[width=8cm]{./fig/euler-angle.png}
 			\captionof{figure}{欧拉角（Euler angles），黑色和蓝色圆盘仅为视觉辅助作用，请勿混淆. \label{fig:ueler-angle}}
 		\end{center}
 		\begin{center}
-			\includegraphics[width = 7cm]{./fig/axes.png}
+			\includegraphics[width = 8cm]{./fig/axes.png}
 			\captionof{figure}{带上网球拍后的坐标的建立，其中蓝色为固联坐标系，黑色为质心系，红色为网球拍. \label{fig:axes}}
 		\end{center}
 		同时我们认为这也是最为直观的欧拉角约定，简要来说，$\theta$角和$\phi$共同来决定拍柄的朝向，随后$\psi$角单独决定其翻面的情况，并且$\vec{e}_1,\vec{e}_2,\vec{e}_3$（三个固联坐标系上面的基矢量）对应于$I_1<I_2<I_3$（三个主转动惯量）
@@ -143,7 +143,7 @@
 		这里可以看到，$\varepsilon_2,\varepsilon_3$会近似以$\sqrt{k}$为周期做简谐运动，并且初值条件$\varepsilon_{i0},\dot{\varepsilon}_{i0}\:(i = 1,2,3)$都是小量，说明$\varepsilon_2,\varepsilon_3$可以被认为全程都是小量，所以$\omega_1$可以被认为全程近似不变而非暂时不变\footnote{此处可以用递归的论述完整逻辑链路，不过这些过于繁琐，我们此处就不展示了}，这一系列过程导致整个系统是稳定的，这个结论可以通过对初始的欧拉方程进行数值模拟来得到，模拟与实验的结果对比参看\autoref{fig:minimal-axis}
 		
 		\begin{center}
-			\includegraphics[width = 7cm]{./fig/minimal_axis.png}
+			\includegraphics[width = 8cm]{./fig/minimal_axis.png}
 			\captionof{figure}{数值模拟以及实验数据对比-最小轴，关于实验的设置、实验数据的处理、算法选择、结果分析、误差分析和能量分析，我们将放在后文实验说明部分进行详细阐述. \label{fig:minimal-axis}}
 		\end{center}
 		
@@ -165,7 +165,7 @@
 		可以看出，在开始的一小段时间内，$\varepsilon_1,\varepsilon_2$会以指数形式增长，随后$\omega_2$会出现变化，导致整个运动脱离了开始的状态，这种情况就像是放在平滑山丘顶端的小球，虽说理论上是可以在此保持平衡，但是受到任何形式的干扰都会使其脱离原来的平衡点，这就是整个系统的不稳定平衡点，于是，中间轴定理就基本地证明完了，以下是对其进行的数值模拟和实验数据对比（\autoref{fig:intermediate-axis}）
 		
 		\begin{center}
-			\includegraphics[width = 7cm]{./fig/intermediate_axis.png}
+			\includegraphics[width = 8cm]{./fig/intermediate_axis.png}
 			\captionof{figure}{数值模拟以及实验数据对比-中间轴. \label{fig:intermediate-axis}}
 		\end{center}
 		
@@ -177,7 +177,7 @@
 			& M^2 = M_1^2+M_2^2+M_3^2 \label{equ:AM}
 		\end{align}
 		\begin{center}
-			\includegraphics[width = 7cm]{./fig/E_AM_intersection.png}
+			\includegraphics[width = 8cm]{./fig/E_AM_intersection.png}
 			\captionof{figure}{能量守恒和角动量守恒以及其相交的轨道，图像来自\cite{2017_VanDamme}，这个图像主要描述的是：以三个主轴方向上的角动量为坐标轴，能量守恒和角动量守恒两个限制条件形成一个椭球面和一个球面，两球面相交可以得到总角动量在固联坐标系中的演化形式，红色为谐振状态，对应左上的图，蓝色为旋转状态，对应右上的图.右下的图片说明了此图的演化和欧拉角的对应关系，此外严格上讲这里的$\psi$角与原来的欧拉角差了一个$\frac{\pi}{2}$，不影响分析. \label{fig:E_AM_intersection}}
 		\end{center}
 		此外，我们也可得到两种形式的临界点，此处我们用一个参数$\gamma = \frac{2I_2E}{M^2} - 1$来描述它，从球面之前相切的情况可以看出：$\gamma < 0$ 谐振状态，红色轨迹，对应左上的图，$\gamma > 0$ 旋转状态，蓝色轨迹，对应右上的图片，我们此处只是复述了\cite{2017_VanDamme}的结果.
@@ -215,10 +215,15 @@
 		
 		我们对前两个方程组绘制相图，可以得到以下结果；
 		
-		\begin{center}
-			\includegraphics[width = 8cm]{./fig/phase_portrait.png}
-			\captionof{figure}{关于$\psi$与$\theta$的相图，参数使用的是本论文实验部分的实验对象. \label{fig:phase_portrait}}
-		\end{center}
+		\begin{figure*}[!t]
+			\centering
+			\includegraphics[
+			width=\textwidth,
+			keepaspectratio
+			]{./fig/phase_portrait.png}
+			\caption{关于$\psi$与$\theta$的相图，参数使用的是本论文实验部分的实验对象。}
+			\label{fig:phase_portrait}
+		\end{figure*}
 		
 		我们先对这个相图做一些基本的理论工作，以确保相图性质的普适性，检查固定点(fixed points)的信息，以及是否存在分叉现象.
 		
@@ -294,13 +299,13 @@
 		
 		以下是我们绘制的本文章的实验对象的$\varepsilon$热图.
 		\begin{center}
-			\includegraphics[width = 8cm]{./fig/epsilon.png}
+			\includegraphics[width = 8.5cm]{./fig/epsilon.png}
 			\captionof{figure}{$\varepsilon$的热图. \label{fig:epsilon}}
 		\end{center}
 		
 		这个定理巧妙且成功指出了网球拍定理的本质，那就是当刚体整体在空中翻转一圈后（$\phi$转过近似$2\pi$后），此刚体翻面（$\psi$转过近似$\pi$），只不过此处是把目光放到$\phi$角旋转$2\pi$的误差$\varepsilon$，根据系统的连续性，若$\varepsilon$很小，大多数时候可以认为整体翻转完整一圈之后$\psi$的误差很小.
 		
-		\section{实验与计算说明}
+		\section{实验与计算模拟}
 		我们在此部分将详细说明我们数据处理、初值问题计算、关于理论的数值预测和理论\autoref{thm:TRE}预测的对比进行详细叙述.
 		
 		\subsection{实验对象}
@@ -326,7 +331,7 @@
 		数值处理我们是以能量和角动量为基础进行挑选，由我们实验数据结果图片可以看出，在实验过程中（即实验对象在空中进行旋转的时候）能量和总角动量大小几乎没有改变，而抛起和落地的时候能量呈现非常具有特征性的变化，主要体现为快速升高－平稳－突变（接到实验对象或者落到缓冲垫上）的过程，我们在检查实验数据是否到实验对象的最高测量上限以及审查整个实验过程中测量时间间隔和参考值的差别后选择了这段实验数据作为理论对比的对象.
 		
 		\begin{center}
-			\includegraphics[width = 7cm]{./fig/minimal_axis.png}
+			\includegraphics[width = 8cm]{./fig/minimal_axis.png}
 			\captionof{figure}{实验数据.}
 		\end{center}
 		
@@ -345,49 +350,44 @@
 		我们首先使用基础欧拉法，以明确展示这些基础特征带来的影响，以下是我们用基础欧拉法计算得来的能量变化和角速度的相图，可以看出能量变化显著、相图曲线不闭合.
 		
 		\begin{center}
-			\includegraphics[width = 7cm]{./fig/E_euler.png}
-			\includegraphics[width = 7cm]{./fig/dE_euler.png}
-			\includegraphics[width = 7cm]{./fig/phase_euler.png}
+			\includegraphics[width = 8cm]{./fig/E_euler.png}
+			\includegraphics[width = 8cm]{./fig/dE_euler.png}
+			\includegraphics[width = 8cm]{./fig/phase_euler.png}
 			\captionof{figure}{欧拉算法.\label{fig:euler_method}}
 		\end{center}
 		
-		所以我们要采用更高阶且具有特殊方法保证守衡量不变的算法，以下是我们所在此问题中采用的算法综述
+		所以我们要采用更高阶且具有特殊方法保证守衡量不变的算法，以下是我们所在此问题中采用的算法综述：
 		
-		\begin{center}
-			\captionof{table}{算法概述}
+		\begin{figure*}[!t]
+			\centering
+			\includegraphics[
+			width=\textwidth,
+			keepaspectratio
+			]{./fig/compare_E.png}
+			\caption{能量图像，在能量和角动量图中我们把角动量中的$\omega_3$放到了里面，高阶自适应步长算法在剧烈变化（指数级增长和衰减）的时候呈现的能量波动以及波动后的能量的变化十分显著且对应关系明确.}
+			\label{fig:method_compare}
+		\end{figure*}
+		
+		\begin{itemize}
+			\item \textbf{RK45}：显式自适应步长 Runge--Kutta 方法，通过四阶和五阶嵌套公式估计局部误差，并自动调整积分步长，在保证积分精度的同时提高计算效率。
 			
-			\begin{tabular}{>{\small}l >{\footnotesize\raggedright\arraybackslash}p{3.6cm}}
-				\toprule
-				\textbf{算法} & \textbf{\small 简述} \\
-				\midrule
-				RK45 &
-				显式自适应步长 Runge--Kutta 方法，通过四阶和五阶嵌套公式估计局部误差，并自动调整积分步长，在保证精度的同时提高计算效率。 \\
-				
-				DOP853 &
-				八阶 Dormand--Prince 自适应 Runge--Kutta 方法，具有更高积分精度和更好的误差控制能力，适用于高精度常微分方程数值求解。 \\
-				
-				Implicit Midpoint &
-				二阶隐式中点辛积分方法，能够保持系统的辛结构，在长时间积分过程中具有良好的能量和角动量守恒性能。 \\
-				
-				Gauss--Legendre 4 (GL4) \cite{2006_Lubich_BOOK,2009_Ernst_BOOK} &
-				四阶两阶段 Gauss--Legendre 辛积分方法，兼具高阶精度和辛结构保持特性，适用于刚体动力学等哈密顿系统的长期数值模拟。 \\
-				
-				Adaptive GL4 + Projection \cite{2006_Lubich_BOOK,2009_Ernst_BOOK} &
-				基于四阶 Gauss--Legendre 辛积分，引入自适应步长控制和流形投影技术，在提高积分效率的同时，将数值解投影回守恒流形，以保持系统能量和总角动量等守恒量。 \\
-				
-				\bottomrule
-			\end{tabular}
-		\end{center}
+			\item \textbf{DOP853}：八阶 Dormand--Prince 自适应 Runge--Kutta 方法，具有更高的积分精度和更好的误差控制能力，适用于高精度常微分方程数值求解.
+			
+			\item \textbf{Implicit Midpoint}：二阶隐式中点辛积分方法，能够保持系统的辛结构，在长时间积分过程中具有良好的能量和角动量守恒性能.
+			
+			\item \textbf{Gauss--Legendre 4 (GL4)} \cite{2006_Lubich_BOOK,2009_Ernst_BOOK}：四阶两阶段 Gauss--Legendre 辛积分方法，兼具高阶精度和辛结构保持特性，适用于刚体动力学等哈密顿系统的长期数值模拟.
+			
+			\item \textbf{Adaptive GL4 + Projection} \cite{2006_Lubich_BOOK,2009_Ernst_BOOK}：基于四阶 Gauss--Legendre 辛积分，引入自适应步长控制和流形投影技术，在提高积分效率的同时，将数值解投影回守恒流形，以保持系统能量和总角动量等守恒量.
+		\end{itemize}
 		
 		以下是我们给出的关于欧拉动力学方程的模拟：
 		
 		\begin{center}
-			\includegraphics[width = 7cm]{./fig/compare.png}
-			\includegraphics[width = 7cm]{./fig/compare_E.png}
-			\captionof{figure}{算法对比，在能量和角动量图中我们把角动量中的$\omega_3$放到了里面，高阶自适应步长算法在剧烈变化（指数级增长和衰减）的时候呈现的能量波动以及波动后的能量的变化十分显著且对应关系明确.\label{fig:method_compare}}
+			\includegraphics[width = 8cm]{./fig/compare.png}
+			\captionof{figure}{多种算法绘制出的系统演化图像，良好的重合了.}
 		\end{center}
 		
-		可以看到，RK45和DOP853两个高阶算法出现了显著问题，纵使算法阶数很高，但是在能量守恒方面仍然会受到明显的指数衰减和增长的冲击，从图中可以看出，在系统到达指数增长区间（中间轴定理起效）也就是顶峰的时候，能量会发生显著的波动，即第二张图的成簇波动，在没有指数增长或衰减的情况下，算法表现良好，能量几乎不变，但是一旦到达指数增长或衰减区间，能量会在短时间内剧烈波动后显著降低，整体呈现阶梯式下降，这也就是本微分方程如前所述的特殊之处，我们做出判断：
+		重点在\autoref{fig:method_compare}，RK45和DOP853两个高阶算法出现了显著问题，纵使算法阶数很高，但是在能量守恒方面仍然会受到明显的指数衰减和增长的冲击，从图中可以看出，在系统到达指数增长区间（中间轴定理起效）也就是顶峰的时候，能量会发生显著的波动，即第二张图的成簇波动，在没有指数增长或衰减的情况下，算法表现良好，能量几乎不变，但是一旦到达指数增长或衰减区间，能量会在短时间内剧烈波动后显著降低，整体呈现阶梯式下降，这也就是本微分方程如前所述的特殊之处，我们做出判断：
 		
 		高阶自适应算法无法胜任处理本方程的初值问题的工作.
 		
@@ -395,13 +395,11 @@
 		
 		\begin{center}
 			\includegraphics[width = 8cm]{./fig/final3.png}
-			\includegraphics[width = 8cm]{./fig/final3_E.png}
-			\captionof{figure}{长时间后的情况，没有显著区别，并且能量不变.\label{fig:final3}}
+			\captionof{figure}{长时间后的情况，没有显著区别，并且能量近乎不变，能量图像仅为一条直线，在有意义的范围内几乎无波动.\label{fig:final3}}
 		\end{center}
 		
 		\begin{center}
 			\includegraphics[width = 8cm]{./fig/final3_enhanced.png}
-			\includegraphics[width = 8cm]{./fig/final3_enhanced_E.png}
 			\captionof{figure}{增大初始值的情况，在一段时间后算法预测的角速度结果出现劈裂（橙线和绿线是重合的），能量仍然很好地被保持了.\label{fig:final3_enhanced}}
 		\end{center}
 		
@@ -409,31 +407,37 @@
 		
 		我们对三种辛方法做出优缺点总结：
 		
-		\begin{center}
-			\captionof{table}{总结}
+		\begin{itemize}
+			\item \textbf{Implicit Midpoint}
+			\begin{itemize}
+				\item \textbf{优点：}计算逻辑简单、算力消耗低、计算速度快，适合短时、低精度的快速试算场景.
+				\item \textbf{缺点：}精度层级低，误差累积效应显著，无法适配长时间仿真、大振幅强振荡的刚体旋转场景，数值稳定性较差.
+			\end{itemize}
 			
-			\begin{tabular}{>{\small}l >{\footnotesize\raggedright\arraybackslash}p{3.6cm}}
-				\toprule
-				\textbf{算法} & \textbf{\small 优缺点} \\
-				\midrule
-				
-				Implicit Midpoint &
-				优点：计算逻辑简单、算力消耗低、计算速度快，适合短时、低精度的快速试算场景；\newline
-				缺点：精度层级低，误差累积效应显著，无法适配长时间仿真、大振幅强振荡的刚体旋转场景，数值稳定性差。\\
-				
-				Gauss--Legendre 4 (GL4) \cite{2006_Lubich_BOOK,2009_Ernst_BOOK} &
-				优点：四阶高精度，保辛效果好，常规场景下数值误差极小，仿真结果可信度高；\newline
-				缺点：采用固定步长，算力利用率低。刚体旋转存在剧烈振荡与平缓变化的交替过程，固定极小步长会造成平缓阶段算力浪费，固定大步长会放大振荡阶段误差；同时无投影校正机制，浮点舍入误差会长期累积，超长时间仿真仍会出现微弱守恒量漂移。 \\
-				
-				Adaptive GL4 + Projection \cite{2006_Lubich_BOOK,2009_Ernst_BOOK} &
-				优点：四阶高精度、自适应高效算力分配、严格物理守恒，彻底解决长时间误差累积、大振幅误差放大问题，适配所有复杂刚体旋转仿真场景；\newline
-				缺点：需要进行步长迭代、误差估计、约束方程求解，单步计算逻辑复杂、算力成本最高。\\
-				
-				\bottomrule
-			\end{tabular}
-		\end{center}
+			\item \textbf{Gauss--Legendre 4 (GL4)} \cite{2006_Lubich_BOOK,2009_Ernst_BOOK}
+			\begin{itemize}
+				\item \textbf{优点：}四阶高精度，保辛效果好，常规场景下数值误差极小，仿真结果可信度高.
+				\item \textbf{缺点：}采用固定步长，算力利用率较低。刚体旋转存在剧烈振荡与平缓变化交替的过程，固定极小步长会造成平缓阶段算力浪费，固定较大步长则会放大振荡阶段误差；同时缺乏投影校正机制，浮点舍入误差会长期累积，超长时间仿真仍可能出现微弱守恒量漂移.
+			\end{itemize}
+			
+			\item \textbf{Adaptive GL4 + Projection} \cite{2006_Lubich_BOOK,2009_Ernst_BOOK}
+			\begin{itemize}
+				\item \textbf{优点：}四阶高精度、自适应高效算力分配，并结合投影校正保证物理守恒.
+				\item \textbf{缺点：}需要进行步长迭代、误差估计以及约束方程求解，单步计算逻辑较为复杂，算力成本最高，并且非完全辛方法，大规模的调节步长会出现能量偏移，详情见后文.
+			\end{itemize}
+		\end{itemize}
 		
 		我们最后给出误差表格\autoref{tab:error}
+		
+		\begin{figure*}[!t]
+			\centering
+			\includegraphics[
+			width=\textwidth,
+			keepaspectratio
+			]{./fig/euler2_E.png}
+			\caption{进一步去除所有辛方法的曲线，RK45特征与前面的图差不多，但是量级远小于辛方法，同时表现最为优秀的是DOP853，其能量变化有非单调的特征存在，加之其误差本就很小，使其能量变化相当少.}
+			\label{fig:euler2}
+		\end{figure*}
 		
 		\begin{table*}[t]
 			\centering
@@ -461,26 +465,26 @@
 		
 		\begin{center}
 			\includegraphics[width = 8cm]{./fig/euler_all_E.png}
-			\captionof{figure}{欧拉角的数值解，隐式中点辛积分误差非常大.\label{fig:euler_all_E}}
+			\captionof{figure}{欧拉角的数值解，隐式中点辛积分能量误差呈现周期性且非常大，我们在尝试不同总角动量和不同时间长短之后效果一致.\label{fig:euler_all_E}}
 		\end{center}
 		
 		\begin{center}
-			\includegraphics[width = 8cm]{./fig/euler_4_E.png}
-			\captionof{figure}{去除隐式中间点.\label{fig:euler4}}
+			\includegraphics[width = 8cm]{./fig/euler_longtime.png}
+			\captionof{figure}{去除隐式中间点，拉长时间范围，注意到一开始表现最好的Adaptive GL4不但误差大且逐渐偏离，我们最后会简要说明.\label{fig:euler4}}
 		\end{center}
 		
 		\begin{center}
-			\includegraphics[width = 8cm]{./fig/euler_4_E.png}
-			\captionof{figure}{进一步去除所有辛方法.\label{fig:euler4}}
+			\includegraphics[width = 8cm]{./fig/euler_enhance.png}
+			\captionof{figure}{提高初值大小，我们发现此处GL4的误差对于初值的大小十分敏感，这可能是由于其精度阶数很低导致快速变化对其的冲击远大于其他算法，而Adaptive GL4由于有自适应步长，就很好地减少了此冲击的效果.\label{fig:euler_enhance}}
 		\end{center}
 		
-		从中可以看出高阶算法在这种情况虽然有局部震荡，但是整体误差远小于辛方法（5~10个量级），可以看到辛方法（即使有高阶算法提升）在面对时间范围不是很大的问题时，其对快速变化仍旧很脆弱，辛算法在阶数上的提升确实能够在一定程度上提升其精度，但是相比于自适应步长高阶算法来说仍然带来了不小的误差（5个量级）.
+		从中可以看出高阶算法在这种情况虽然有局部震荡，但是整体误差远小于辛方法（$5\sim 10$个量级），可以看到辛方法（即使有高阶算法提升）在面对时间范围不是很大的问题时，其对快速变化仍旧很脆弱，辛算法在阶数上的提升确实能够在一定程度上提升其精度，但是相比于自适应步长高阶算法来说仍然带来了不小的误差（5个量级）.
 		
-		而高阶算法虽然与前面的问题一致，存在强烈的局部震荡，也只是相对预期已经积累的偏差而言，实际上最后带来的误差仍然不会过大，在此问题背景下，高阶自适应步长算法如果要产生比辛算法更大的能量偏差，就至少要积累此处展示的时间长度的4~5个量级.这与前面的结果截然相反.
+		而高阶算法虽然与前面的问题一致，存在强烈的局部震荡，也只是相对预期已经积累的偏差而言，实际上最后带来的误差仍然不会过大，在此问题背景下，高阶自适应步长算法如果要产生比辛算法更大的能量偏差，就至少要积累此处展示的时间长度的4、5个量级.这与前面的结果截然相反.
 		
-		主要是因为在前面的结果中，指数增长结合在高阶自适应步长算法中带来的能量误差远大于辛方法，而这里效果相反，这说明快速变化对辛方法和高阶算法带来的影响不是线性的，我依据方法和方程的形式而不同，我们此处没有改变计算的物理模型的本质，仅仅是带入了欧拉角，最后能量波动的结果截然不同.
+		主要是因为在前面的结果中，指数增长结合在高阶自适应步长算法中带来的能量误差远大于辛方法，而这里效果相反，这说明快速变化对辛方法和高阶算法带来的影响不是线性的，即依据方法和方程的形式而不同，我们此处没有改变计算的物理模型的本质，仅仅是带入了欧拉角、更改初值或拉长时间，最后能量波动的结果截然不同.
 		
-		但是归根结底算法的特征是一致的，高阶算法仍然保证了其高精度性，以及能量误差的单调性，同样也呈现阶梯式下降，辛方法仍是在局部进行波动，不会有明显积累（红色线的误差，有上升的趋势我们认为是算法导致的局部情况，理由是前面有下降后上升的趋势，最后面又有一些下降的趋势）.
+		但是归根结底算法的特征是一致的，高阶算法仍然保证了其高精度性，以及能量误差的单调性，同样也呈现阶梯式下降，辛方法仍是在局部进行波动，不过值得一提的是，Adaptive GL4在这里出现了上升的情况，这是因为Adaptive GL4不是严格的辛积分器，这在书籍\cite{2006_Lubich_BOOK}有复杂且严格的讨论，我们不做深入分析.
 		
 		\begin{center}
 			\captionof{table}{替换欧拉角之后的算法误差表格}
@@ -501,6 +505,10 @@
 		
 		\subsection{总结}
 		于此我们完整对比了多种初值问题，计算方法，即对于一个复杂并且具有两个似乎矛盾的特征的微分方程的求解，可以看出不只是对于不同的问题，甚至是对于同一个问题，不同形式下的方程，每一个算法都会带来截然不同的误差大小，虽然他们都保持了自己原来算法的特征，但是所带来误差的大小却因为两个复杂因素而难以断定哪个方法更合适，在此背景下，具体选择哪种方法需要看方法实际的表现来决定.
+		
+	\section{结论与未来展望}
+	在本篇文章中，我们全面描述了网球拍效应的理论说明和可视化展示，并提供了相图、全面的描绘了系统的演化过程，同时我们指出本方程同时具备两个守恒量和剧烈变化区间，采用了多种不同的方法进行，尤其是对比了辛方法和高阶方法在本系统中的表现，在相同系统的方程的两种不同的变量形式下两批算法的精度截然不同，提醒了我们在未来面对快速变化和具有多个守恒量的系统时，应结合多个算法的具体表现做出判断，本文章的不足之处在于对比的算法数量有限，而且对比仅限在本问题之上，没有把算法施加到其他具有相同特征的系统上面进行更广泛的研究，结论有待精炼和推广，我们在这一方面期待未来的进一步研究.
+	
 		
 %-----------------------显示参考文献------------------------%
         \bibliographystyle{thuthesis-numeric}%这里使用了清华大学学位论文模板样式，其与《大学物理》期刊官方论文模板要求一致

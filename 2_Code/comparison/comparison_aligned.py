@@ -14,6 +14,8 @@ from scipy.optimize import root
 # 1. 显眼参数区：只改这里即可快速切换实验
 # ============================================================
 
+figsize1 = (15,6)
+
 @dataclass(frozen=True)
 class RigidBodyParams:
     """刚体主转动惯量。这里使用题目给出的网球拍定理参数。"""
@@ -707,7 +709,7 @@ def plot_invariants(
     fig, axes = plt.subplots(
         3,
         1,
-        figsize=(11, 10),
+        figsize=figsize1,
         sharex=True,
         constrained_layout=True,
     )
@@ -836,7 +838,6 @@ def main() -> None:
     fig2 = plot_invariants(results, CFG, PARAMS)
 
     print("\n图像已保存：")
-    print(f"1. {fig1}")
     print(f"2. {fig2}")
     print(f"输出目录：{Path(CFG.output_dir).resolve()}")
 

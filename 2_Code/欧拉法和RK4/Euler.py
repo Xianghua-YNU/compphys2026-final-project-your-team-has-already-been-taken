@@ -77,7 +77,7 @@ plt.rcParams["font.family"] = "Times New Roman"
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示方块问题
 
 # ===================== 图1：Ek(t) + AM(t) 上下子图 =====================
-plt.figure(figsize=(10, 8))
+plt.figure(figsize=(9, 3))
 
 # 子图1：动能 Ek
 ax1 = plt.subplot(2, 1, 1)
@@ -103,7 +103,7 @@ plt.tight_layout()
 plt.show()
 
 # ===================== 图2：等效数值误差功率 dEk/dt =====================
-plt.figure(figsize=(9, 5))
+plt.figure(figsize=(9, 3))
 ax_p = plt.gca()
 plt.plot(t_power, dEk_dt / 1e6, linewidth=2, color="#c0392b")
 plt.xlabel(r'$t/\mathrm{s}$', fontsize=13)
