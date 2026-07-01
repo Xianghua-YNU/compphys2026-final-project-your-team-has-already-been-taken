@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CHECKLIST.md",
+                "file": "5_协作分工/任务分工表.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CHECKLIST"
+              "title": "任务分工表"
             }
           }
         ]
@@ -185,9 +185,9 @@
   },
   "active": "97db683eba218b21",
   "lastOpenFiles": [
-    "5_协作分工/任务分工表.md",
-    "CHECKLIST.md",
     "5_协作分工/README.md",
+    "CHECKLIST.md",
+    "5_协作分工/任务分工表.md",
     "4_Presentation/README.md",
     "4_Presentation/TRE.mp4",
     "3_Data/README.md",
