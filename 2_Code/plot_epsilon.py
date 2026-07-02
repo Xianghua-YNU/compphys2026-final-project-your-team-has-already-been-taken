@@ -5,9 +5,15 @@ Created on Tue May 26 09:16:46 2026
 @author: 20277
 """
 
+from pathlib import Path
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import root
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+FIG_DIR = SCRIPT_DIR / "fig"
+FIG_DIR.mkdir(exist_ok=True)
 
 eps = 0.01
 
