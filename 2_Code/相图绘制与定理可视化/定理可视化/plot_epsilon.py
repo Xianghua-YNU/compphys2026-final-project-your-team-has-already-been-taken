@@ -17,6 +17,7 @@ FIG_DIR.mkdir(exist_ok=True)
 
 eps = 0.01
 
+# 定理给出的方程
 def equ(ep ,a ,b):
     s = np.sin(ep)
     c = np.cos(ep)

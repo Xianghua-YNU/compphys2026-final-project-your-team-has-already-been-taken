@@ -30,7 +30,7 @@ def set_chinese_font():
         "ytick.labelsize": 7,
     })
 
-
+# 欧拉动力学方程带入欧拉角之后的简化版本
 def rhs(theta, psi):
     s = np.sin(psi)
     c = np.cos(psi)
