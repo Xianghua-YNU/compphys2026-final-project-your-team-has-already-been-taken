@@ -53,8 +53,6 @@
         本文主要聚焦这篇2017年的论文\cite{2017_VanDamme}中部分的结论，给出网球拍定理的较为完整的分析路径，包括对于中间轴定理的理论分析、实验与数值模拟和对于网球拍效应的非线性动力学分析，随后我们将给出一个\cite{2017_VanDamme}中的理论来描述网球拍效应的效果，对理论上的解的表达式做了数值模拟，最后我们将直接对决定这个系统演化的方程即欧拉动力学方程的完整形式进行数值模拟，并采用多种数值方法验证这个理论是否正确。
         
         论文\cite{2017_VanDamme}部分地使用了非线性动力学的方法，为人们理解网球拍效应做出了重大贡献，但是仍然存在些许不足，主要体现在他虽然引入了朗道在书本\cite{Landau_2013_BOOK}中得到的引入了欧拉角的欧拉动力学方程的化简后的形态，将系统从六阶降到了三阶，并且进一步降到了二阶，但是VanDamme将两个变量分开讨论，以欧拉角和欧拉角的变化率作为坐标轴强行绘制相图，这样得到的结果就是$\psi$角的变化在$\cos\theta = 0$处难以描述，$\theta$和$\dot{\theta}$更是不构成自治系统，绘制的相图无法直接用非线性动力学分析，并且其论文中虽然提到了鞍点和中心点，但是对于这两个固定点的分析欠佳，我们将在此论文中在一定程度上弥补这些缺憾.
-        
-        ,,,,引言部分不需写标题，即不写“引言”二字．参考文献序号按其在文中出现的顺序编排，文中引用处用上标\cite{xingshinianfenlun,li2000yi}，3个以上用连字符\cite{xingshinianfenlun,li2000yi,CTEX}．全文数字、西文用Times New Roman(\ts{已设定})，句号用实心点
 
 
 		\section{数学物理模型建立}
@@ -280,7 +278,8 @@
 				 \psi_0 = \varepsilon& ,\qquad  
 				\psi_f = \pi - \epsilon \\
 				\intertext{其中：}
-				f(a,b,\psi, \gamma) =  S&\frac{1 -b\sin^2\psi}{\sqrt{a+b\sin^2\psi}\sqrt{\gamma+b\sin^2\psi}} \qquad S = sign(\cos \theta) \\
+				f(a,b,\psi, \gamma) =  S&\frac{1 -b\sin^2\psi}{\sqrt{a+b\sin^2\psi}\sqrt{\gamma+b\sin^2\psi}} ,\qquad \\
+				 S = & sign(\cos \theta) \\
 				\intertext{推得有：} 
 				 \varepsilon = \varepsilon_0 - &\frac{\gamma}{4b\epsilon_0} +O(\gamma^2). \\
 				\intertext{$\varepsilon_0$是以下方程的解：}
