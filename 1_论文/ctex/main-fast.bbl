@@ -1,0 +1,58 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[作者(出版年)]{xingshinianfenlun}
+作者.
+\newblock 论文题目\allowbreak[J].
+\newblock 期刊名, 出版年, 卷\allowbreak (期): 起止页码.
+
+\bibitem[喀蔚波等(2000)喀蔚波, 李玉梅, 孙大公, and 等]{li2000yi}
+喀蔚波, 李玉梅, 孙大公, 等.
+\newblock 医学院校物理实验现代化建设的一些设想\allowbreak[J].
+\newblock 大学物理, 2000, 19\allowbreak (4): 42-44.
+
+\bibitem[\href{http://www.ctex.org/}{CTEX.ORG}(2020)]{CTEX}
+\href{http://www.ctex.org/}{CTEX.ORG}.
+\newblock \CTeX{}宏集手册\allowbreak[M].
+\newblock v2.5.5.
+\newblock 2020.
+
+\bibitem[作者(出版年)]{zuozhenianfenshu}
+作者.
+\newblock 书名\allowbreak[M].
+\newblock 出版版次（第1版不用写）.
+\newblock 出版地: 出版社, 出版年: 起止页码.
+
+\bibitem[刘海洋(2013)]{liu2013latex}
+刘海洋.
+\newblock \LaTeX{}入门\allowbreak[M].
+\newblock 北京: 电子工业出版社, 2013.
+
+\bibitem[胡伟(2017)]{hu2017latex}
+胡伟.
+\newblock \LaTeXe{}文类和宏包学习手册\allowbreak[M].
+\newblock 北京: 清华大学出版社, 2017.
+
+\bibitem[吴崇试等(2019)吴崇试 and 高春媛]{wu2019shu}
+吴崇试, 高春媛.
+\newblock 数学物理方法\allowbreak[M].
+\newblock 3 版.
+\newblock 北京: 北京大学出版社, 2019.
+
+\bibitem[郭硕鸿(2008)]{guo2008dian}
+郭硕鸿.
+\newblock 电动力学\allowbreak[M].
+\newblock 3 版.
+\newblock 北京: 高等教育出版社, 2008: 37-70.
+
+\end{thebibliography}

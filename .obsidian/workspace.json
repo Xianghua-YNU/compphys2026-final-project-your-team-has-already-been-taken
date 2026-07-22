@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "a2de6ee46540373c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3dcce91a7e51ce4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97db683eba218b21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "70334bfca7c9cee7",
+    "type": "split",
+    "children": [
+      {
+        "id": "e00b09e3539ad2e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efafca2d179d7c5f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "d81786f95350884b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "0cdff203eb1d69e7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e70b9dabb1f2d678",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ef18bafc5624731",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2bfe33b502aaa47",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1_论文/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "README 的反向链接列表"
+            }
+          },
+          {
+            "id": "ffbff63b4187e34a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1_论文/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "README 的出链列表"
+            }
+          },
+          {
+            "id": "adbdf6a18c31457e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "db28c2b06eb49221",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "f079ac04588d01bd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1_论文/README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "README 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "97db683eba218b21",
+  "lastOpenFiles": [
+    "2_Code/README - how to use this.md",
+    "README.md",
+    "CHECKLIST.md",
+    "2_Code/ai使用声明.txt",
+    "2_Code/新建 文本文档.txt",
+    "2_Code/相图绘制与定理可视化/定理可视化/plot_the_tennis_racket.py",
+    "2_Code/相图绘制与定理可视化/定理可视化/plot_epsilon.py",
+    "2_Code/相图绘制与定理可视化/定理可视化/epsilon_surface_plot_cellphone.png",
+    "2_Code/相图绘制与定理可视化/定理可视化",
+    "2_Code/相图绘制与定理可视化/新建文件夹",
+    "2_Code/相图绘制与定理可视化/epsilon_surface_plot_cellphone.png",
+    "2_Code/相图绘制与定理可视化/相图绘制/phase_portrait.py",
+    "2_Code/相图绘制与定理可视化/相图绘制/phase_explain.png",
+    "2_Code/相图绘制与定理可视化/相图绘制/epsilon_surface_plot_cellphone.png",
+    "2_Code/相图绘制与定理可视化/相图绘制/fig",
+    "2_Code/相图绘制与定理可视化/相图绘制/phase_portrait_animation.mp4",
+    "2_Code/相图绘制与定理可视化/相图绘制/phase_portrait_ani.py",
+    "3_Data/README.md",
+    "2_Code/README.md",
+    "2_Code/README - 副本.md",
+    "5_协作分工/README.md",
+    "5_协作分工/任务分工表.md",
+    "2_Code/算法对比/更换公式后的算法对比与可视化/tennis_racket_output/energy_comparison_absolute.png",
+    "2_Code/算法对比/更换公式后的算法对比与可视化/tennis_racket_output/euler_angle_comparison.png",
+    "4_Presentation/README.md",
+    "2_Code/相图绘制与定理可视化/phase_explain.png",
+    "2_Code/数据处理与可视化/intermediate_axis.png",
+    "2_Code/算法对比/欧拉法和RK45初步分析/E_euler.png",
+    "2_Code/算法对比/欧拉法和RK45初步分析/phase_euler.png",
+    "1_论文/README.md",
+    "0_Guide_Materials/计算物理期末论文选题库.md"
+  ]
+}
